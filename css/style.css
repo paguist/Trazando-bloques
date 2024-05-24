@@ -1,50 +1,54 @@
-.container {
+.container{
     width: 950px;
     background-color: silver;
-    margin: 20px;
-    padding: 20px;
+    margin: 0px auto;
     display: flex;
-    flex-direction: column; /*para que los elementos se organicen en columnas */
+    flex-direction: column; /* para que los 2 elementos dentro de este contedor esten como columnas */
+    margin: 20px;
+    padding: 20px;  
 }
 
 .top-nav {
     height: 150px;
     background-color: green;
+    margin-bottom: 20px; 
+    margin-top: 0;
+}
+
+.container2{ /* segundo div contenedor para poner a los elementos dentro de el en renglón */
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .side-nav {
     height: 300px;
-    width: 150px;
-    background-color: blue;
-    margin: 20px 0; /* ese segundo cero le saca el margen lateral para que se alinee con .top nav */
-    padding: 20px;
-    align-self: flex-start; /* alinea el .side-nav al principio del contenedor flex */
-    
+    width: 200px;
+    background-color: blue; 
+    gap: 10px;
+    margin-bottom: 10px; 
 }
 
 .main {
     height: 400px;
-    width: 100%; 
+    width: 800px;
     background-color: red;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px; /* este gap hace un espacio entre los elementos dentro de .main */
-   
-    
+    padding-bottom: 20px;   
 }
 
 .sub-content {
     height: 200px;
     width: 210px;
     background-color: yellow;
-    margin: 10px;
-    padding: 10px;
+    display: inline-block;
+    margin: 10px;   
 }
 
 #advertisement {
-    height: 100px;
-    width: 720px;
+    height: 120px;
+    width: 660px;
     background-color: purple;
     margin: 10px;
     padding: 10px;
 }
+
